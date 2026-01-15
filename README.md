@@ -26,20 +26,27 @@ why this dont work good
 
 ## Installation
 
-### Option 1: Install from Local Path
+### Quick Install (Recommended)
+
+```bash
+# Add the marketplace
+/plugin marketplace add methuz/claude-prompt-improver
+
+# Install the plugin
+/plugin install prompt-improver@prompt-improver-marketplace
+```
+
+### Install from Local Path
 
 ```bash
 # Clone this repository
-git clone https://github.com/rubick/claude-prompt-improver.git ~/Workspace/claude/prompt-improver
+git clone https://github.com/methuz/claude-prompt-improver.git
+
+# Add as local marketplace
+/plugin marketplace add ./claude-prompt-improver
 
 # Install the plugin
-claude plugins install ~/Workspace/claude/prompt-improver
-```
-
-### Option 2: Install from GitHub (when published)
-
-```bash
-claude plugins install rubick/claude-prompt-improver
+/plugin install prompt-improver@prompt-improver-marketplace
 ```
 
 ### Manual Installation
@@ -54,7 +61,7 @@ If the plugin system doesn't work, add this to your `~/.claude/settings.json`:
         "hooks": [
           {
             "type": "command",
-            "command": "/path/to/prompt-improver/hooks/prompt-improver.py",
+            "command": "/path/to/claude-prompt-improver/hooks/prompt-improver.py",
             "timeout": 10
           }
         ]
@@ -125,7 +132,7 @@ The plugin automatically skips:
 ## Uninstall
 
 ```bash
-claude plugins uninstall prompt-improver
+/plugin uninstall prompt-improver@prompt-improver-marketplace
 ```
 
 Or manually remove the hook from `~/.claude/settings.json`.

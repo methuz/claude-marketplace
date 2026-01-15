@@ -1,0 +1,17 @@
+{
+  "name": "prompt-improver-marketplace",
+  "owner": {
+    "name": "methuz",
+    "email": "methuz@users.noreply.github.com"
+  },
+  "metadata": {
+    "description": "Plugins for improving Claude Code prompts and writing quality"
+  },
+  "plugins": [
+    {
+      "name": "prompt-improver",
+      "source": ".",
+      "description": "Automatically provides grammar corrections and refined versions of your prompts"
+    }
+  ]
+}
