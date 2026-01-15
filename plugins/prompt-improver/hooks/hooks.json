@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "$PLUGIN_DIR/hooks/prompt-improver.py",
+            "command": "${PLUGIN_DIR}/hooks/prompt-improver.py",
             "timeout": 10
           }
         ]
