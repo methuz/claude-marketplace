@@ -1,17 +1,22 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "methuz-claude-marketplace",
+  "description": "Collection of Claude Code plugins by methuz",
   "owner": {
     "name": "methuz",
     "email": "methuz@users.noreply.github.com"
   },
-  "metadata": {
-    "description": "Collection of Claude Code plugins by methuz"
-  },
   "plugins": [
     {
       "name": "prompt-improver",
+      "description": "Automatically provides grammar corrections and refined versions of your prompts",
+      "version": "1.0.0",
+      "author": {
+        "name": "methuz",
+        "email": "methuz@users.noreply.github.com"
+      },
       "source": "./plugins/prompt-improver",
-      "description": "Automatically provides grammar corrections and refined versions of your prompts"
+      "category": "productivity"
     }
   ]
 }
